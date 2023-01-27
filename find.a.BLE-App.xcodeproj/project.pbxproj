@@ -80,16 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8D0432E9293EA48C005B4F91 /* find.a.BLE-iOS */ = {
+		8D0432E9293EA48C005B4F91 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				8D1B75D8298474AC00EAC5F2 /* find-a-BLE-iOS-Info.plist */,
-				8D0432EA293EA48C005B4F91 /* findaBLE_Application.swift */,
 				8D0432EB293EA48C005B4F91 /* Assets.xcassets */,
-				8D0432EE293EA48C005B4F91 /* View */,
 				8D0432EC293EA48C005B4F91 /* Preview Content */,
 			);
-			path = "find.a.BLE-iOS";
+			path = App;
 			sourceTree = "<group>";
 		};
 		8D0432EC293EA48C005B4F91 /* Preview Content */ = {
@@ -100,14 +98,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		8D0432EE293EA48C005B4F91 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				8D0432F1293EA48C005B4F91 /* AppView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		8D0432EF293EA48C005B4F91 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,15 +106,16 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		8D0432F4293EA496005B4F91 /* Common */ = {
+		8D0432F4293EA496005B4F91 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				8D0432EA293EA48C005B4F91 /* findaBLE_Application.swift */,
 				8DE2B8EB293EAB88004468E2 /* View */,
 				8D0432F5293EA496005B4F91 /* ViewModel */,
 				8D0432FB293EA496005B4F91 /* Model */,
 				8D043301293EA496005B4F91 /* Data */,
 			);
-			path = Common;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		8D0432F5293EA496005B4F91 /* ViewModel */ = {
@@ -191,8 +182,8 @@
 			children = (
 				8D04331C293EA5A5005B4F91 /* LICENSE */,
 				8D04331B293EA5A5005B4F91 /* README.md */,
-				8D0432E9293EA48C005B4F91 /* find.a.BLE-iOS */,
-				8D0432F4293EA496005B4F91 /* Common */,
+				8D0432F4293EA496005B4F91 /* Source */,
+				8D0432E9293EA48C005B4F91 /* App */,
 				8D53092429229AD900C76153 /* Products */,
 				8D29FFF72928716F00A13574 /* Frameworks */,
 			);
@@ -227,6 +218,7 @@
 		8DE2B8EB293EAB88004468E2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8D0432F1293EA48C005B4F91 /* AppView.swift */,
 				8DE2B8EC293EAB88004468E2 /* AppContainerView.swift */,
 				8D0432F2293EA48C005B4F91 /* ScanResultCellView.swift */,
 				8D0432EF293EA48C005B4F91 /* Settings */,
