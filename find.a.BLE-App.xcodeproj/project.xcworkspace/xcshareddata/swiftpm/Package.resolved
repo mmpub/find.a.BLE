@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "cbuuid-standard",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mmstaging/CBUUID-Standard.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "c0b13375ede6ac9cf6de45855e01ea2cecde79e5"
+      }
+    },
+    {
+      "identity" : "mvvmd",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mmstaging/MVVMD.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "c96be365e071922bc8f4c63a879f7ee4f2d64a95"
+      }
+    },
+    {
+      "identity" : "singleinstance",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mmstaging/SingleInstance.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "6ed99d84617f58f2f10eb85afc6ed66f9ae7656f"
+      }
+    },
+    {
+      "identity" : "swift-async-algorithms",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-async-algorithms.git",
+      "state" : {
+        "revision" : "cca423ff03ab657062f3781847e65a867b51bb01",
+        "version" : "0.0.3"
+      }
+    }
+  ],
+  "version" : 2
+}
