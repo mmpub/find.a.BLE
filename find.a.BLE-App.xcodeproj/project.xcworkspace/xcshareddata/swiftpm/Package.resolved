@@ -3,28 +3,28 @@
     {
       "identity" : "cbuuid-standard",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/mmstaging/CBUUID-Standard.git",
+      "location" : "https://github.com/mmpub/CBUUID-Standard.git",
       "state" : {
         "branch" : "main",
-        "revision" : "c0b13375ede6ac9cf6de45855e01ea2cecde79e5"
+        "revision" : "137efe0674e29b44c5028c1332a0bc7025891cf7"
       }
     },
     {
       "identity" : "mvvmd",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/mmstaging/MVVMD.git",
+      "location" : "https://github.com/mmpub/MVVMD.git",
       "state" : {
         "branch" : "main",
-        "revision" : "c96be365e071922bc8f4c63a879f7ee4f2d64a95"
+        "revision" : "6c3d12e1ab972db023adea5e20f1cdfc04d08089"
       }
     },
     {
       "identity" : "singleinstance",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/mmstaging/SingleInstance.git",
+      "location" : "https://github.com/mmpub/SingleInstance.git",
       "state" : {
         "branch" : "main",
-        "revision" : "6ed99d84617f58f2f10eb85afc6ed66f9ae7656f"
+        "revision" : "fe59f23a1ad86b47f41ef3766011452c711811d2"
       }
     },
     {

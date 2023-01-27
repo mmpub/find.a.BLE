@@ -26,9 +26,9 @@
 		8D043319293EA524005B4F91 /* ScanResultCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0432F2293EA48C005B4F91 /* ScanResultCellView.swift */; };
 		8D04331A293EA524005B4F91 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0432F1293EA48C005B4F91 /* AppView.swift */; };
 		8D0AA70A2947ECCD000DB69A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0432EB293EA48C005B4F91 /* Assets.xcassets */; };
-		8D3000CF293AD61B00FEA9CD /* CBUUID+Standard in Frameworks */ = {isa = PBXBuildFile; productRef = 8D3000CE293AD61B00FEA9CD /* CBUUID+Standard */; };
+		8D1B75E12984885700EAC5F2 /* CBUUID+Standard in Frameworks */ = {isa = PBXBuildFile; productRef = 8D1B75E02984885700EAC5F2 /* CBUUID+Standard */; };
+		8D1B75E42984887200EAC5F2 /* MVVMD in Frameworks */ = {isa = PBXBuildFile; productRef = 8D1B75E32984887200EAC5F2 /* MVVMD */; };
 		8D4FF0702929A87D009DE175 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 8D4FF06F2929A87D009DE175 /* AsyncAlgorithms */; };
-		8D6822BF29523F1600F6ADCA /* MVVMD in Frameworks */ = {isa = PBXBuildFile; productRef = 8D6822BE29523F1600F6ADCA /* MVVMD */; };
 		8D6822C4295256A100F6ADCA /* PeripheralCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6822C3295256A100F6ADCA /* PeripheralCatalog.swift */; };
 		8D6822C7295256EC00F6ADCA /* CoreBluetoothDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6822C6295256EC00F6ADCA /* CoreBluetoothDelegate.swift */; };
 		8D6822CA2952577600F6ADCA /* BLEAuthorizationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6822C92952577600F6ADCA /* BLEAuthorizationState.swift */; };
@@ -71,9 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D6822BF29523F1600F6ADCA /* MVVMD in Frameworks */,
+				8D1B75E42984887200EAC5F2 /* MVVMD in Frameworks */,
 				8D4FF0702929A87D009DE175 /* AsyncAlgorithms in Frameworks */,
-				8D3000CF293AD61B00FEA9CD /* CBUUID+Standard in Frameworks */,
+				8D1B75E12984885700EAC5F2 /* CBUUID+Standard in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,8 +252,8 @@
 			name = "find.a.BLE-iOS";
 			packageProductDependencies = (
 				8D4FF06F2929A87D009DE175 /* AsyncAlgorithms */,
-				8D3000CE293AD61B00FEA9CD /* CBUUID+Standard */,
-				8D6822BE29523F1600F6ADCA /* MVVMD */,
+				8D1B75E02984885700EAC5F2 /* CBUUID+Standard */,
+				8D1B75E32984887200EAC5F2 /* MVVMD */,
 			);
 			productName = BT1;
 			productReference = 8D53092329229AD900C76153 /* find.a.BLE-iOS.app */;
@@ -285,8 +285,8 @@
 			mainGroup = 8D53091A29229AD900C76153;
 			packageReferences = (
 				8D4FF06E2929A87D009DE175 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
-				8D3000CD293AD61B00FEA9CD /* XCRemoteSwiftPackageReference "CBUUID-Standard" */,
-				8D6822BD29523F1600F6ADCA /* XCRemoteSwiftPackageReference "MVVMD" */,
+				8D1B75DF2984885700EAC5F2 /* XCRemoteSwiftPackageReference "CBUUID-Standard" */,
+				8D1B75E22984887200EAC5F2 /* XCRemoteSwiftPackageReference "MVVMD" */,
 			);
 			productRefGroup = 8D53092429229AD900C76153 /* Products */;
 			projectDirPath = "";
@@ -550,9 +550,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8D3000CD293AD61B00FEA9CD /* XCRemoteSwiftPackageReference "CBUUID-Standard" */ = {
+		8D1B75DF2984885700EAC5F2 /* XCRemoteSwiftPackageReference "CBUUID-Standard" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mmstaging/CBUUID-Standard.git";
+			repositoryURL = "https://github.com/mmpub/CBUUID-Standard.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		8D1B75E22984887200EAC5F2 /* XCRemoteSwiftPackageReference "MVVMD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mmpub/MVVMD.git";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -566,31 +574,23 @@
 				minimumVersion = 0.0.3;
 			};
 		};
-		8D6822BD29523F1600F6ADCA /* XCRemoteSwiftPackageReference "MVVMD" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mmstaging/MVVMD.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8D3000CE293AD61B00FEA9CD /* CBUUID+Standard */ = {
+		8D1B75E02984885700EAC5F2 /* CBUUID+Standard */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8D3000CD293AD61B00FEA9CD /* XCRemoteSwiftPackageReference "CBUUID-Standard" */;
+			package = 8D1B75DF2984885700EAC5F2 /* XCRemoteSwiftPackageReference "CBUUID-Standard" */;
 			productName = "CBUUID+Standard";
+		};
+		8D1B75E32984887200EAC5F2 /* MVVMD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D1B75E22984887200EAC5F2 /* XCRemoteSwiftPackageReference "MVVMD" */;
+			productName = MVVMD;
 		};
 		8D4FF06F2929A87D009DE175 /* AsyncAlgorithms */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8D4FF06E2929A87D009DE175 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
 			productName = AsyncAlgorithms;
-		};
-		8D6822BE29523F1600F6ADCA /* MVVMD */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8D6822BD29523F1600F6ADCA /* XCRemoteSwiftPackageReference "MVVMD" */;
-			productName = MVVMD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
